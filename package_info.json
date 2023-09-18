@@ -1,0 +1,11 @@
+{
+  "name": "cms_board",
+  "version": "1.0.0",
+  "description": "cms_module 생성",
+  "author": "kkj9491",
+  "database": {
+    "type": "git",
+    "url": "https://github.com/ttbkkj/cms_board"
+  },
+  "databaseScript": "create table if not exists cms_schema.board(id      bigint auto_increment primary key, author  varchar(50)  null, content longtext     null, title   varchar(255) null);"
+}

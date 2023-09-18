@@ -6,25 +6,20 @@ server:
 spring:
   profiles:
     active: local
-    devtools:
-      livereload:
-        enable: true
-    jpa:
+  jpa:
+    hibernate:
+      naming:
+        # 변수명을 그대로 칼럼명으로 지정 가능하도록 설정 (ex. 카멜케이스)
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      # TODO 추후 수정이 필요할듯
       hibernate:
-        naming:
-          # 변수명을 그대로 칼럼명으로 지정 가능하도록 설정 (ex. 카멜케이스)
-          implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-#      properties:
-#        # TODO 추후 수정이 필요할듯
-#        hibernate:
-#          # 하이버네이트가 실행하는 모든 SQL문을 콘솔로 출력해 준다.
-#          show_sql: true
-#          # 콘솔에 출력되는 JPA 실행 쿼리를 가독성있게 표현한다.
-#          format_sql: true
-#          # 디버깅이 용이하도록 SQL문 이외에 추가적인 정보를 출력해 준다.
-#          use_sql_comments: true
-#          # 데이터베이스 방언 설정
-#          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-  jooq:
-    sql-dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        # 하이버네이트가 실행하는 모든 SQL문을 콘솔로 출력해 준다.
+        show_sql: true
+        # 콘솔에 출력되는 JPA 실행 쿼리를 가독성있게 표현한다.
+        format_sql: true
+        # 디버깅이 용이하도록 SQL문 이외에 추가적인 정보를 출력해 준다.
+        use_sql_comments: true
+        # 데이터베이스 방언 설정
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect

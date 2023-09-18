@@ -13,7 +13,7 @@ spring:
 
 log:
   config:
-    path: /home/ttbusr/logs/cms_bbs
+    path: /home/ttbusr/logs/cms_board
     filename: cms_bbs
     maxHistory: 50
     totalSizeCap: 50MB

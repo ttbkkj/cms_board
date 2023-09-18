@@ -1,0 +1,27 @@
+#개발서버 설정
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.91:3306/cms_schema
+    username: ttbusr
+    password: 1q2w3e4r
+
+
+log:
+  config:
+    path: /home/ttbusr/logs/cms_bbs
+    filename: cms_bbs
+    maxHistory: 50
+    totalSizeCap: 50MB
+
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<info>
+    <projectInfo>
+        <type>git</type>
+        <url>https://github.com/ttbkkj/cms_board</url>
+    </projectInfo>
+    <name>cms_board</name>
+    <version>1.0.0</version>
+    <author>kkj9491</author>
+    <description>cms_module 생성</description>
+    <databaseQuery>
+        create table if not exists cms_schema.board(id bigint auto_increment primary key, author varchar(50) null,
+        content longtext null, title varchar(255) null);
+    </databaseQuery>
+
+    <menu>
+        <depth1>
+            메뉴1
+        </depth1>
+        <depth2>
+            메뉴11
+        </depth2>
+        <depth3>
+            메뉴111
+        </depth3>
+        <depth3>
+            메뉴112
+        </depth3>
+        <depth4>
+            메뉴1121
+        </depth4>
+        <depth5>
+            메뉴11211
+        </depth5>
+        <depth2>
+            메뉴12
+        </depth2>
+
+    </menu>
+
+
+
+</info>

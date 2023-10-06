@@ -1,0 +1,24 @@
+{
+  "menu1": {
+    "categoryUrl": "/1",
+    "description": "메뉴1",
+    "enName": "menu1",
+    "name": "메뉴1",
+    "orderVal": "1",
+    "children": {
+      "categoryUrl": "/11",
+      "description": "메뉴11",
+      "enName": "menu11",
+      "name": "메뉴11",
+      "orderVal": "1",
+      "children": {
+        "categoryUrl": "/111",
+        "description": "메뉴111",
+        "enName": "menu111",
+        "name": "메뉴111",
+        "orderVal": "1",
+        "children": {}
+      }
+    }
+  }
+}

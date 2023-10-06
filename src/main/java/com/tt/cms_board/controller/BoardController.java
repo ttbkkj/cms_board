@@ -38,8 +38,7 @@ public class BoardController {
     }
 
     @PostMapping("/save")
-    public void saveBoard(@RequestBody Board board, @RequestParam("kk") String kk) {
-
+    public void saveBoard(@RequestBody Board board) {
         boardService.save(board);
     }
 
